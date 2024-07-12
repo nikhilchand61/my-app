@@ -1,0 +1,33 @@
+<div class="parent">
+    <h1>cart</h1>
+    <div>
+        <label for="">name:</label>
+        <input type="text" [(ngModel)]="name">
+    </div>
+    <div>
+        <label for="">price:</label>
+        <input type="text" [(ngModel)]="price">
+    </div>
+    <div>
+        <label for="">rating:</label>
+        <input type="text" [(ngModel)]="rating">
+    </div>
+    <button (click)="addToCart(name,price,rating)">add to cart</button>
+    <h2>cart items</h2>
+    <table *ngIf="cartItems.length">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>RATING</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cartRow of cartItems">
+                <td> {{cartRow.name}} </td>
+                <td> {{cartRow.price}} </td>
+                <td> {{cartRow.rating}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

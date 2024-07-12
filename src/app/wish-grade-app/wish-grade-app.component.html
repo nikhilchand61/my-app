@@ -1,0 +1,25 @@
+<div class="parent">
+    <div class="top">
+        <h1>my apps</h1>
+    </div>
+    <div class="bottom">
+        <div class="left">
+            <h2>Wish</h2>
+            <div>
+                <label for="">time:</label>
+                <input type="number" [(ngModel)]="time" min="1" max="24">
+            </div>
+            <button (click)="wish()">wish</button>
+            <h3>My app wishes you: {{ wishes }}</h3>
+        </div>
+        <div class="right">
+            <h2>grade check</h2>
+            <div>
+                <label for="">marks:</label>
+                <input type="number" [(ngModel)]="marks" min="0" max="100">
+            </div>
+            <button (click)="calc()">calculate</button>
+            <h3>result: {{ grades }}</h3>
+        </div>
+    </div>
+</div>

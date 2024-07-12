@@ -1,0 +1,74 @@
+<p>directives works!</p>
+<!-- Structural Directives -->
+
+<!-- JS For loop
+for(let age of ages){
+    console.log(age);
+} -->
+
+
+<!-- ngFor -->
+<h5 *ngFor="let age of ages">Age is: {{age}}</h5>
+
+<!-- ngFor with index -->
+<h5 *ngFor="let age of ages; let i=index">Person {{i+1}} age is: {{age}} </h5>
+
+
+<!-- ngFor on elements -->
+<ul>
+    <li *ngFor="let state of states">{{state}}</li>
+</ul>
+
+<label for="">States: </label>
+<select name="" id="">
+    <option value="" *ngFor="let state of states">{{state}}</option>
+</select>
+
+<!-- ngFor on array of objects -->
+<h5 *ngFor="let product of products">
+    {{product.name}} price is {{product.price}} and rating is {{product.rating}}
+</h5>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>RATING</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td> {{product.name}} </td>
+            <td> {{product.price}} </td>
+            <td> {{product.rating}} </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ngIf -->
+<button *ngIf="true">submit</button>
+<button *ngIf="false">create</button>
+<button *ngIf="true">cancel</button>
+
+
+
+<!-- Attribute Directives -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>RATING</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td> {{product.name}} </td>
+            <!-- <td class="low"> {{product.price}} </td> -->
+            <td [ngClass]="{'low':product.price<=1000, 'medium':product.price>1000 && product.price<10000, 'high':product.price>=10000}"> {{product.price}} </td>
+            <!-- <td style="color: red;"> {{product.rating}} </td> -->
+            <td [ngStyle]="{'color': product.rating<3 ? 'red': 'green'}"> {{product.rating}} </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,28 @@
+<h2>Employees table</h2>
+<!-- <h3>1) Create a table with data.</h3>
+<h3> 2) Show the experience text color</h3>
+<p> less than 3 years exp in green </p>
+<p> 3-5 years exp in yellow</p>
+<p> greater than 5 years exp in red</p>
+<h3> 3) Show DOB in YYYY-MM-DD format </h3>
+<h3> 4) If package is above 10LPA show that entire row in GREEN COLOR</h3> -->
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>DOB</th>
+            <th>EXPERIENCE</th>
+            <th>PACKAGE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees" [ngClass]="{ 'row_highlight': employee.package > 10 } ">
+            <td> {{employee.name}} </td>
+            <td> {{employee.age}} </td>
+            <td> {{employee.dob | date:'yyyy-MM-dd' }} </td>
+            <td [ngClass]="{ 'lt3':employee.experience<3, 'ttf':employee.experience>=3 && employee.experience<=5, 'gtf':employee.experience>5 }"> {{employee.experience}} </td>
+            <td> {{employee.package}} </td>
+        </tr>
+    </tbody>
+</table>
