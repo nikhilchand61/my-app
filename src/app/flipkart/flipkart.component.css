@@ -1,0 +1,138 @@
+/* Dark Theme Table CSS */
+.parent {
+    width: 100%;
+    height: 100%;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+h1,h3{
+    margin: 0;
+    padding: 5px;
+    color: white;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_left{
+    width: 60%;
+}
+.top_left > div{
+    display: flex;
+    margin: 10px;
+    gap: 15px;
+}
+.top_left > div > input, .top_left > div > button, .top_right > form > div > input, .top_right > form > div > button{
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.top_left > div > button, .top_right > form > div > button{
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.top button:hover {
+    transform: scale(1.05);
+}
+
+.top button:active {
+    transform: scale(0.95);
+}
+
+.top button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 207, 173, 0.5);
+}
+.blue-btn{
+    background-color: blue;
+    color: white;
+}
+.yellow-btn{
+    background-color: yellow;
+    color: black;
+}
+.teal-btn{
+    background-color:deepskyblue;
+    color: black;
+}
+.black-btn{
+    background-color: black;
+    color: white;
+}
+.green-btn{
+    background-color: #09A129;
+    color: white;
+}
+.top_right{
+    width: 40%;    
+}
+.top_right > form > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+}
+.radio{
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin-top: 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+}
+th, td {
+    padding: 10px 15px;
+    border: 1px solid #333;
+}
+th {
+    background-color: #333;
+    color: #FFF;
+}
+tr {
+    border-bottom: 1px solid #444;
+}
+tr:nth-child(even) {
+    background-color: #2E2E2E;
+}
+tr:hover {
+    background-color: #444;
+}
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.delete-btn:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+}
+.delete-btn:active {
+    background-color: #e60000;
+    transform: scale(0.95);
+}
+.delete-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.5);
+}

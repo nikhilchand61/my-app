@@ -20,6 +20,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeesTableComponent } from './employees-table/employees-table.component';
 import { EventRegistrationComponent } from './event-registration/event-registration.component';
 import { CartComponent } from './cart/cart.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CartComponent } from './cart/cart.component';
     PipesComponent,
     EmployeesTableComponent,
     EventRegistrationComponent,
-    CartComponent
+    CartComponent,
+    FlipkartComponent
   ],
   imports: [
     BrowserModule,

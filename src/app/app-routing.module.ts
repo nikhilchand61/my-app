@@ -16,6 +16,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeesTableComponent } from './employees-table/employees-table.component';
 import { EventRegistrationComponent } from './event-registration/event-registration.component';
 import { CartComponent } from './cart/cart.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -32,7 +33,8 @@ const routes: Routes = [
     {path: 'pipes', component:PipesComponent},
     {path: 'employees_table', component:EmployeesTableComponent},
     {path: 'event_registration', component:EventRegistrationComponent},
-    {path: 'cart', component:CartComponent}
+    {path: 'cart', component:CartComponent},
+    {path: 'flipkart', component: FlipkartComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}
