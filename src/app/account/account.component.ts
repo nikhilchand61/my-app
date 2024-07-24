@@ -60,4 +60,16 @@ export class AccountComponent implements OnInit {
       }
     );
   }
+
+  delete(id:string){
+    this._accountService.deleteAccount(id).subscribe(
+      (data:any)=>{
+        alert("deleted successfully!!!!!");
+        location.reload();
+      },
+      (err:any)=>{
+        alert("deletion failed");
+      }
+    );
+  }
 }

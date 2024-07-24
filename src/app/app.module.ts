@@ -30,6 +30,8 @@ import { MailsComponent } from './mails/mails.component';
 import { ReloadComponent } from './reload/reload.component';
 import { MemesComponent } from './memes/memes.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { StudentCardComponent } from './student-card/student-card.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
     MailsComponent,
     ReloadComponent,
     MemesComponent,
-    CreateVehicleComponent
+    CreateVehicleComponent,
+    CreateAccountComponent,
+    StudentCardComponent
   ],
   imports: [
     BrowserModule,

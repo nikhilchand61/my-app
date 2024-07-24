@@ -9,7 +9,6 @@ import { AmazonService } from '../amazon.service';
 export class AmazonComponent implements OnInit {
 
   public amazonProducts:any = [];
-  // public mens:string = "";
   
   constructor(private _amazonService:AmazonService) {
     _amazonService.getAmazonProducts().subscribe(

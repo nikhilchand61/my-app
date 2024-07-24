@@ -34,3 +34,7 @@ button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(72, 207, 173, 0.5);
 }
+.red-button{
+    color: white;
+    background-color: red;
+}

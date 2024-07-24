@@ -49,6 +49,7 @@
             <th>city</th>
             <th>profie_picture</th>
             <th>id</th>
+            <th>actions</th>
         </tr>
     </thead>
     <tbody>
@@ -61,6 +62,9 @@
                 <img src="{{account.profie_picture}}" alt="" width="100px">
             </td>
             <td> {{account.id}} </td>
+            <td>
+                <button class="red-button" (click)="delete(account.id)">delete</button>
+            </td>
         </tr>
     </tbody>
 </table>

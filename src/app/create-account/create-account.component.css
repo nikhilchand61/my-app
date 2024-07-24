@@ -57,11 +57,11 @@ form label {
   
   /* Input styling */
 form input[type="text"] {
-    width: 100%; /* Full-width inputs */
-    padding: 10px; /* Padding inside inputs */
-    margin-bottom: 20px; /* Space below inputs */
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 5px; /* Rounded corners */
-    box-sizing: border-box; /* Ensure padding and border are included in total width */
-    font-size: 16px; /* Input font size */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
 }  
