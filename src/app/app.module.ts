@@ -9,7 +9,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
@@ -21,6 +21,15 @@ import { EmployeesTableComponent } from './employees-table/employees-table.compo
 import { EventRegistrationComponent } from './event-registration/event-registration.component';
 import { CartComponent } from './cart/cart.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmployeesDbComponent } from './employees-db/employees-db.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AccountComponent } from './account/account.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { MailsComponent } from './mails/mails.component';
+import { ReloadComponent } from './reload/reload.component';
+import { MemesComponent } from './memes/memes.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 
 @NgModule({
   declarations: [
@@ -41,12 +50,22 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
     EmployeesTableComponent,
     EventRegistrationComponent,
     CartComponent,
-    FlipkartComponent
+    FlipkartComponent,
+    EmployeesDbComponent,
+    VehicleComponent,
+    AccountComponent,
+    AmazonComponent,
+    MailsComponent,
+    ReloadComponent,
+    MemesComponent,
+    CreateVehicleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

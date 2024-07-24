@@ -1,0 +1,67 @@
+/* label{
+    display: inline-block;
+    margin: 5px;
+    width: 100px;
+}
+input{
+    padding: 5px;
+    margin: 5px;
+} */
+button {
+    background-color: #4CAF50;
+    width: 100%;
+    border: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 20px 100px; */
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+  
+button:hover {
+    background-color: darkgreen;
+    color: whitesmoke;
+    border: 2px solid #4CAF50;
+}
+  
+/* Basic form styling */
+form {
+    max-width: 400px;
+    margin: 0 auto; /* Center the form on the page */
+    padding: 20px; /* Add padding inside the form */
+    background-color: white; /* Background color similar to your screenshot */
+    border-radius: 10px; /* Rounded corners */
+}
+  
+  /* Form title styling */
+h1 {
+    text-align: center; /* Center the title */
+    color: black; /* Title color */
+    font-size: 24px; /* Title font size */
+    margin-bottom: 20px; /* Space below the title */
+}
+  
+  /* Label styling */
+form label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 8px; /* Space between label and input */
+    color: black; /* Label color */
+    font-size: 18px; /* Label font size */
+}
+  
+  /* Input styling */
+form input[type="text"] {
+    width: 100%; /* Full-width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in total width */
+    font-size: 16px; /* Input font size */
+}  

@@ -27,7 +27,7 @@ export class FlipkartComponent implements OnInit {
     {name: 'watch', price: 8000, rating: 4.4, freedelivery: true},
     {name: 'mouse', price: 499, rating: 3.9, freedelivery: false},
     {name: 'shoes', price: 999, rating: 3.7, freedelivery: false},
-    {name: 'laptop', price: 60000, rating: 4.7, freedelivery: true},
+    {name: 'laptop', price: 60000, rating: 4.7, freedelivery: true}
   ];
   
   constructor() { }

@@ -81,3 +81,6 @@ h1, h2, ol, li, div, button, input {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+td{
+    color: white;
+}

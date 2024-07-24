@@ -1,0 +1,8 @@
+<div class="parent" *ngFor="let meme of memes; let i = index">
+    <div>
+        <h2>{{meme.name}}</h2>
+        <h3>width: {{meme.width}}</h3>
+        <h3>height: {{meme.height}}</h3>
+        <img src="{{meme.url}}" alt="">
+    </div>
+</div>

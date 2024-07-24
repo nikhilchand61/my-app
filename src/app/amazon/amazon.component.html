@@ -1,0 +1,52 @@
+<div class="parent">
+    <div class="left">
+        <h1>filters</h1>
+        <h3>category</h3>
+        <input type="checkbox" id="mens" name="category" (click)="mensClothing()">
+        <label for="mens">men's clothing</label>
+        <br><br>
+        <input type="checkbox" id="jew" name="category" (click)="jewelery()">
+        <label for="jew">jewelery</label>
+        <br><br>
+        <input type="checkbox" id="elec" name="category" (click)="elec()">
+        <label for="elec">electronics</label>
+        <br><br>
+        <input type="checkbox" id="women" name="category" (click)="women()">
+        <label for="women">women's clothing</label>
+        <br><br>
+        <h3>price</h3>
+        <input type="checkbox" id="fil1" name="price" (click)="filter7to50()">
+        <label for="fil1">rs.7 to rs.50</label>
+        <br><br>
+        <input type="checkbox" id="fil2" name="price" (click)="filter50to300()">
+        <label for="fil2">rs.50 to rs.300</label>
+        <br><br>
+        <input type="checkbox" id="fil3" name="price" (click)="filter300to600()">
+        <label for="fil3">rs.300 to rs.600</label>
+        <br><br>
+        <input type="checkbox" id="fil4" name="price" (click)="filter600to1000()">
+        <label for="fil4">rs.600 to rs.1000</label>
+        <br><br>
+    </div>
+    <div class="right">
+        <div class="right_top">
+            <label for="sort">price range: </label>
+            <select name="sort" (change)="sortProducts($event)">
+                <option value="all">all</option>
+                <option value="lth">low to high</option>
+                <option value="htl">high to low</option>
+            </select>
+        </div>
+        <div class="right_bottom">
+            <div class="card" *ngFor="let amazonProduct of amazonProducts" title={{amazonProduct.description}}>
+                <div class="card_image">
+                    <img src="{{amazonProduct.image}}" alt="" width="200px" height="200px">
+                    <button>{{amazonProduct.rating.rate}} &#9733; | {{amazonProduct.rating.count}}</button>
+                </div>
+                <h4> {{amazonProduct.category}} </h4>
+                <p> {{amazonProduct.title}} </p>
+                <h5><strong> rs. {{amazonProduct.price}} </strong></h5>
+            </div>
+        </div>
+    </div>
+</div>

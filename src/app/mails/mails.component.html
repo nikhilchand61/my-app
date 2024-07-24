@@ -1,0 +1,8 @@
+<div>
+    <table>
+        <tr *ngFor="let mail of mails" [ngClass]="{'completed':mail.completed==true}">
+            <td> {{mail.id}} </td>
+            <td> {{mail.title}} </td>
+        </tr>
+    </table>
+</div>

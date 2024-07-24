@@ -1,0 +1,66 @@
+<div>
+    <!-- filtering -->
+    <input type="text" placeholder="Search account" [(ngModel)]="term" (keyup)="filter()">
+    <br><br>
+    <!-- sorting -->
+    <label for="">Column</label>
+    <select name="" id="" [(ngModel)]="column">
+        <option>account_name</option>
+        <option>available_balance</option>
+        <option>account_number</option>
+        <option>city</option>
+        <option>id</option>
+    </select>
+    <label for="">Order</label>
+    <select name="" id="" [(ngModel)]="order">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+    </select>
+    <button (click)="sortAccounts()">Sort Accounts</button>
+    <br><br>
+    <!-- Pagination -->
+    <label for="">Limit</label>
+    <select name="" id="" [(ngModel)]="limit">
+        <option>10</option>
+        <option>20</option>
+        <option>50</option>
+    </select>
+    <label for="">Page</label>
+    <select name="" id="" [(ngModel)]="page">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+    </select>
+    <button (click)="pageAccounts()">Page Accounts</button>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>account_name</th>
+            <th>available_balance</th>
+            <th>account_number</th>
+            <th>city</th>
+            <th>profie_picture</th>
+            <th>id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let account of accounts">
+            <td> {{account.account_name}} </td>
+            <td> {{account.available_balance}} </td>
+            <td> {{account.account_number}} </td>
+            <td> {{account.city}} </td>
+            <td>
+                <img src="{{account.profie_picture}}" alt="" width="100px">
+            </td>
+            <td> {{account.id}} </td>
+        </tr>
+    </tbody>
+</table>

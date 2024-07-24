@@ -1,0 +1,74 @@
+.parent{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    text-transform: capitalize;
+    background-color: white;
+}
+.left{
+    width: 18%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    /* bottom: 0; */
+    padding-left: 20px;
+}
+.left h1{
+    text-align: center;
+}
+.right{
+    width: 82%;
+    height: 100%;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; */
+}
+.right_top{
+    text-align: end;
+    padding: 20px;
+}
+select{
+    text-transform: capitalize;
+    padding: 5px;
+}
+.right_bottom{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+} 
+.card{
+    width: 225px;
+    height: 350px;
+    background-color: white;
+    line-height: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+.card h4, .card p, .card h5{
+    margin: 0px 0px 0px 10px;
+}
+.card p {
+    font-size: x-small;
+}
+.card_image{
+    position: relative;
+    text-align: center;
+}
+.card_image > button{
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+    opacity: 0.8;
+}
+img{
+    width: 200px;
+    height: 250px;
+}
+p{
+    font-size:small;
+}

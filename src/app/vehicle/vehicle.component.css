@@ -1,0 +1,37 @@
+input, select{
+    padding: 7px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    border: 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+label{
+    color: white;
+    letter-spacing: 1px;
+}
+button{
+    border: 0;
+    font-weight: 600;
+    padding: 7px 20px;
+    font-size: 18px;
+    margin: 0 10px 20px 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    transform: scale(1.05);
+}
+button:active {
+    transform: scale(0.95);
+}
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 207, 173, 0.5);
+}
+.red-button{
+    color: white;
+    background-color: red;
+}

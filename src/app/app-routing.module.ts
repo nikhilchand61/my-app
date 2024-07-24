@@ -17,24 +17,40 @@ import { EmployeesTableComponent } from './employees-table/employees-table.compo
 import { EventRegistrationComponent } from './event-registration/event-registration.component';
 import { CartComponent } from './cart/cart.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmployeesDbComponent } from './employees-db/employees-db.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { AccountComponent } from './account/account.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { MailsComponent } from './mails/mails.component';
+import { ReloadComponent } from './reload/reload.component';
+import { MemesComponent } from './memes/memes.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {path: 'dashboard', component:DashboardComponent, children:[
-    {path: 'welcome', component:WelcomeComponent},
-    {path: 'home', component:HomeComponent},
-    {path: 'data-binding', component:DataBindingComponent},
-    {path: 'calculator', component:CalculatorComponent},
-    {path: 'rectangle', component:RectangleComponent},
-    {path: 'circle', component:CircleComponent},
-    {path: 'bmi', component:BmiComponent},
-    {path: 'wish_grade_app', component:WishGradeAppComponent},
-    {path: 'directives', component:DirectivesComponent},
-    {path: 'pipes', component:PipesComponent},
-    {path: 'employees_table', component:EmployeesTableComponent},
-    {path: 'event_registration', component:EventRegistrationComponent},
-    {path: 'cart', component:CartComponent},
-    {path: 'flipkart', component: FlipkartComponent}
+    {path: 'welcome', component: WelcomeComponent},
+    {path: 'home', component: HomeComponent},
+    {path: 'data-binding', component: DataBindingComponent},
+    {path: 'calculator', component: CalculatorComponent},
+    {path: 'rectangle', component: RectangleComponent},
+    {path: 'circle', component: CircleComponent},
+    {path: 'bmi', component: BmiComponent},
+    {path: 'wish_grade_app', component: WishGradeAppComponent},
+    {path: 'directives', component: DirectivesComponent},
+    {path: 'pipes', component: PipesComponent},
+    {path: 'employees_table', component: EmployeesTableComponent},
+    {path: 'event_registration', component: EventRegistrationComponent},
+    {path: 'cart', component: CartComponent},
+    {path: 'flipkart', component: FlipkartComponent},
+    {path: 'employees_db', component: EmployeesDbComponent},
+    {path: 'vehicle', component: VehicleComponent},
+    {path: 'account', component: AccountComponent},
+    {path: 'amazon', component: AmazonComponent},
+    {path: 'mails', component: MailsComponent},
+    {path: 'reload', component: ReloadComponent},
+    {path: 'memes', component: MemesComponent},
+    {path: 'create-vehicle', component: CreateVehicleComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}
