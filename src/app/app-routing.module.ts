@@ -27,6 +27,7 @@ import { MemesComponent } from './memes/memes.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentCardComponent } from './student-card/student-card.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -54,7 +55,8 @@ const routes: Routes = [
     {path: 'memes', component: MemesComponent},
     {path: 'create-vehicle', component: CreateVehicleComponent},
     {path: 'create-account', component: CreateAccountComponent},
-    {path: 'student-card', component: StudentCardComponent}
+    {path: 'student-card', component: StudentCardComponent},
+    {path: 'vehicle-details/:id', component: VehicleDetailsComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

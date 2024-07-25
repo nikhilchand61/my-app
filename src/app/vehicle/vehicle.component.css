@@ -15,7 +15,7 @@ button{
     font-weight: 600;
     padding: 7px 20px;
     font-size: 18px;
-    margin: 0 10px 20px 10px;
+    margin: 0 10px 10px 0px;
     border-radius: 10px;
     text-transform: capitalize;
     cursor: pointer;
@@ -34,4 +34,12 @@ button:focus {
 .red-button{
     color: white;
     background-color: red;
+}
+.view{
+    background-color: #046A38;
+    color: white;
+}
+.edit{
+    background-color: cornflowerblue;
+    color: white;
 }

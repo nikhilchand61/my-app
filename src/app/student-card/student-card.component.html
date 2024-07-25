@@ -2,10 +2,10 @@
     <div class="card" *ngFor="let student of students">
         <div class="header">
             <div class="logo">
-                <img src="" alt="">
+                <img src="{{student.school_logo}}" alt="">
             </div>
             <div class="school_info">
-                <h4>School Name</h4>
+                <h2> {{student.school_name}} </h2>
             </div>
         </div>
         <div class="details">
@@ -22,12 +22,14 @@
                 <h4> {{student.email}} </h4>
             </div>
             <div class="student_photo">
-                <img src="" alt="">
+                <img src="{{student.profile_picture}}" alt="">
             </div>
         </div>
         <div class="footer">
-            <h4>school-city: </h4>
-            <h4>school-pin</h4>
+            <label for="">School_City: </label>
+            <h4> {{student.school_city}} </h4>
+            <label for="">School_Pin</label>
+            <h4> {{student.school_pin}} </h4>
         </div>
     </div>
 </div>
