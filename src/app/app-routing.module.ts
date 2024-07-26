@@ -28,6 +28,9 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentCardComponent } from './student-card/student-card.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
+import { StudentCardDetailsComponent } from './student-card-details/student-card-details.component';
+import { CreateStudentCardComponent } from './create-student-card/create-student-card.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -56,7 +59,13 @@ const routes: Routes = [
     {path: 'create-vehicle', component: CreateVehicleComponent},
     {path: 'create-account', component: CreateAccountComponent},
     {path: 'student-card', component: StudentCardComponent},
-    {path: 'vehicle-details/:id', component: VehicleDetailsComponent}
+    {path: 'vehicle-details/:id', component: VehicleDetailsComponent},
+    {path: 'edit-vehicle/:id', component: CreateVehicleComponent},
+    {path: 'account-details/:id', component: AccountDetailsComponent},
+    {path: 'edit-account/:id', component: CreateAccountComponent},
+    {path: 'student-card-details/:id', component: StudentCardDetailsComponent},
+    {path: 'create-student-card', component: CreateStudentCardComponent},
+    {path: 'edit-student-card/:id', component: CreateStudentCardComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

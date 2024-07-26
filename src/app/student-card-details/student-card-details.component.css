@@ -1,0 +1,62 @@
+.parent{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.card{
+    width: 45%;
+    height: 350px;
+    background-color: white;
+    margin: 30px 30px 0px 30px;
+}
+.header{
+    background-color: #FF671F;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo > img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid gray;
+}
+.details{
+    background-color: #FFFFFF;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.student_photo > img{
+    width: 180px;
+    height: 200px;
+    border: 3px solid gray;
+}
+.footer{
+    background-color:#046A38;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+label{
+    display: inline-block;
+    width: 70px;
+}
+h2{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.details h4{
+    color: #06038D;
+}
+h4{
+    display: inline-block;
+    margin: 10px;
+    color: white;
+}
+.footer label{
+    color: lightgray;
+}

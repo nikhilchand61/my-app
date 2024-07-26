@@ -38,6 +38,7 @@ button:focus {
 .view{
     background-color: #046A38;
     color: white;
+    display: block;
 }
 .edit{
     background-color: cornflowerblue;

@@ -11,7 +11,7 @@ export class CartComponent implements OnInit {
   public price:number = 0;
   public rating:number = 0;
 
-  public cartItems:any[] = [];
+  public cartItems:any = [];
 
   constructor() { }
 
