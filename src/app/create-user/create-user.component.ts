@@ -12,7 +12,11 @@ export class CreateUserComponent implements OnInit {
     name: new FormControl(),
     age: new FormControl(),
     phone: new FormControl(),
-    email: new FormControl()
+    email: new FormControl(),
+    address: new FormGroup({
+      city: new FormControl(),
+      pincode: new FormControl()
+    })
   })
 
   constructor() { }
@@ -21,6 +25,6 @@ export class CreateUserComponent implements OnInit {
   }
 
   create(){
-    
+    console.log(this.userForm);
   }
 }

@@ -9,6 +9,12 @@
         <input type="number">
         <label for="">email:</label>
         <input type="email">
+        <div formGroupName="address">
+            <label for="">city:</label>
+            <input type="text" formControlName="city">
+            <label for="">pincode:</label>
+            <input type="number" formControlName="pincode">
+        </div>
         <button (click)="create()">create</button>
     </form>
 </div>
