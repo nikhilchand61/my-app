@@ -1,0 +1,14 @@
+<div class="parent">
+    <h1>create user form</h1>
+    <form [formGroup]="userForm">
+        <label for="">name:</label>
+        <input type="text" formControlName="name">
+        <label for="">age:</label>
+        <input type="number" formControlName="age">
+        <label for="">phone:</label>
+        <input type="number">
+        <label for="">email:</label>
+        <input type="email">
+        <button (click)="create()">create</button>
+    </form>
+</div>

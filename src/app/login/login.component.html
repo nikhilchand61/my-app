@@ -1,11 +1,11 @@
 <!-- <p>login works!</p> -->
 <div class="parent">
     <div class="child">
-        <form action="">
+        <form [formGroup]="loginForm">
             <h2>login page</h2>
-            <input type="email" placeholder="Enter your email address">
-            <input type="password" placeholder="Enter your password">
-            <input routerLink="/dashboard" type="button" value="Login!">
+            <input type="email" placeholder="Enter your email address" formControlName="email">
+            <input type="password" placeholder="Enter your password" formControlName="password">
+            <button (click)="login()">Login</button>
         </form>
     </div>
 </div>

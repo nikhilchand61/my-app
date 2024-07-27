@@ -31,10 +31,12 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { AccountDetailsComponent } from './account-details/account-details.component';
 import { StudentCardDetailsComponent } from './student-card-details/student-card-details.component';
 import { CreateStudentCardComponent } from './create-student-card/create-student-card.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
-  {path: 'dashboard', component:DashboardComponent, children:[
+  {path: 'dashboard', canActivate:[AuthenticationGuard], component:DashboardComponent, children:[
     {path: 'welcome', component: WelcomeComponent},
     {path: 'home', component: HomeComponent},
     {path: 'data-binding', component: DataBindingComponent},
@@ -65,7 +67,8 @@ const routes: Routes = [
     {path: 'edit-account/:id', component: CreateAccountComponent},
     {path: 'student-card-details/:id', component: StudentCardDetailsComponent},
     {path: 'create-student-card', component: CreateStudentCardComponent},
-    {path: 'edit-student-card/:id', component: CreateStudentCardComponent}
+    {path: 'edit-student-card/:id', component: CreateStudentCardComponent},
+    {path: 'create-user', component: CreateUserComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}
