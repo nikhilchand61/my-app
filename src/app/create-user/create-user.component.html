@@ -6,14 +6,30 @@
         <label for="">age:</label>
         <input type="number" formControlName="age">
         <label for="">phone:</label>
-        <input type="number">
+        <input type="number" formControlName="phone">
         <label for="">email:</label>
-        <input type="email">
+        <input type="email" formControlName="email">
         <div formGroupName="address">
             <label for="">city:</label>
             <input type="text" formControlName="city">
             <label for="">pincode:</label>
             <input type="number" formControlName="pincode">
+        </div>
+        <div class="radio">
+            <label for="">type:</label>
+            <input type="radio" id="day" name="type" formControlName="type" value="dayScholar">
+            <label for="day">dayshcolar</label>
+            <input type="radio" id="res" name="type" formControlName="type" value="residential">
+            <label for="res">residential</label>
+        </div>
+
+        <div *ngIf="userForm.get('type')?.value == 'dayScholar'">
+            <label for="">bus fee:</label>
+            <input type="text" formControlName="busFee">
+        </div>
+        <div *ngIf="userForm.controls?.['type']?.value == 'residential'">
+            <label for="">hostel fee:</label>
+            <input type="text" formControlName="hostelFee">
         </div>
         <button (click)="create()">create</button>
     </form>

@@ -16,10 +16,30 @@ export class CreateUserComponent implements OnInit {
     address: new FormGroup({
       city: new FormControl(),
       pincode: new FormControl()
-    })
+    }),
+    type: new FormControl(),
+    // busFee: new FormControl(),
+    // hostelFee: new FormControl()
   })
 
-  constructor() { }
+  constructor() {
+
+    this.userForm.get('type')?.valueChanges.subscribe(
+      (data:any)=>{
+        if(data=='dayScholar'){
+          // add busFee
+          this.userForm.addControl('busFee', new FormControl());
+          this.userForm.removeControl('hostelFee');
+        }
+        else if(data=='residential'){
+          // add hostelFee
+          this.userForm.addControl('hostelFee', new FormControl());
+          this.userForm.removeControl('busFee');
+        }
+      }
+    )
+
+  }
 
   ngOnInit(): void {
   }
