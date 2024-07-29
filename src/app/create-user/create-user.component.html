@@ -2,7 +2,7 @@
     <h1>create user form</h1>
     <form [formGroup]="userForm">
         <label for="">name:</label>
-        <input type="text" formControlName="name">
+        <input type="text" formControlName="name" appCapital>
         <div *ngIf="userForm.get('name')?.touched && userForm.get('name')?.invalid">
             <p class="error" *ngIf="userForm.get('name')?.errors?.['required']">*Name is required.</p>
             <p class="error" *ngIf="userForm.get('name')?.errors?.['minlength']">*Name should be minimum 3 characters</p>
@@ -27,6 +27,7 @@
         <div *ngIf="userForm.get('email')?.touched && userForm.get('email')?.invalid">
             <p class="error" *ngIf="userForm.get('email')?.errors?.['required']">*Email is required.</p>
             <p class="error" *ngIf="userForm.get('email')?.errors?.['email']">*Invalid email format</p>
+            <p class="error" *ngIf="userForm.get('email')?.errors?.['domainValidator']">*Only reqres emails are accepted</p>
         </div>
         <div formGroupName="address">
             <label for="">city:</label>

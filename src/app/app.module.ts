@@ -37,6 +37,7 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
 import { StudentCardDetailsComponent } from './student-card-details/student-card-details.component';
 import { CreateStudentCardComponent } from './create-student-card/create-student-card.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { CapitalDirective } from './capital.directive';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     AccountDetailsComponent,
     StudentCardDetailsComponent,
     CreateStudentCardComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    CapitalDirective
   ],
   imports: [
     BrowserModule,
