@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create-user',
@@ -19,9 +19,23 @@ export class CreateUserComponent implements OnInit {
     }),
     type: new FormControl(null, [Validators.required]),
     // busFee: new FormControl(),
-    // hostelFee: new FormControl()
+    // hostelFee: new FormControl(),
+    cards: new FormArray([])
   })
 
+  get cardsFormArray(){
+    return this.userForm.get('cards') as FormArray;
+  }
+
+  addCard(){
+    this.cardsFormArray.push(
+      new FormGroup({
+        number: new FormControl(null, [Validators.required]),
+        expiry: new FormControl(null, [Validators.required]),
+        cvv: new FormControl(null, [Validators.required])
+      })
+    )
+  }
   constructor() {
 
     this.userForm.get('type')?.valueChanges.subscribe(
@@ -47,5 +61,12 @@ export class CreateUserComponent implements OnInit {
   create(){
     this.userForm.markAllAsTouched();
     console.log(this.userForm);
+  }
+  deleteCard(i:number){
+    // states reset
+    // validators reset
+    // dependency remove
+    // this.cardsFormArray.controls.splice(i,1);
+    this.cardsFormArray.removeAt(i);
   }
 }

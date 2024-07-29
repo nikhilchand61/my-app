@@ -66,6 +66,36 @@
                 <p class="error" *ngIf="userForm.get('hostelFee')?.errors?.['min']">*Minimum 15k Fee</p>
             </div>
         </div>
+        <label for="">Cards:</label>
+        <button (click)="addCard()">add card</button>
+
+        <div formArrayName="cards">
+            <div *ngFor="let card of cardsFormArray.controls; let i=index">
+                <div formGroupName="{{i}}">
+                    <h3>Card {{i+1}}</h3>
+
+                    <label for="">number:</label>
+                    <input type="number" formControlName="number">
+                    <div *ngIf="cardsFormArray.controls[i].get('number')?.touched && cardsFormArray.controls[i].get('number')?.invalid">
+                        <p class="error" *ngIf="cardsFormArray.controls[i].get('number')?.errors?.['required']">*Card number is required</p>
+                    </div>
+                    <label for="">expiry:</label>
+                    <input type="month" formControlName="expiry">
+                    <div *ngIf="cardsFormArray.controls[i].get('expiry')?.touched && cardsFormArray.controls[i].get('expiry')?.invalid">
+                        <p class="error" *ngIf="cardsFormArray.controls[i].get('expiry')?.errors?.['required']">*Card expiry is required</p>
+                    </div>
+                    <label for="">cvv:</label>
+                    <input type="number" formControlName="cvv">
+                    <div *ngIf="cardsFormArray.controls[i].get('cvv')?.touched && cardsFormArray.controls[i].get('cvv')?.invalid">
+                        <p class="error" *ngIf="cardsFormArray.controls[i].get('cvv')?.errors?.['required']">*Card cvv is required</p>
+                    </div>
+
+                    <button class="delete" (click)="deleteCard(i)">delete</button>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
         <button [disabled]="userForm.invalid" (click)="create()">create</button>
         <button (click)="create()">submit</button>
     </form>

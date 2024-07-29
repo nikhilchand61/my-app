@@ -69,3 +69,14 @@ form input {
     margin: 0;
     text-transform:none;
 }
+.delete{
+    width: 30%;
+    margin-left: 70%;
+    background-color: red;
+    opacity: 0.8;
+    color: white;
+}
+.delete:hover{
+    background-color: red;
+    opacity: 1;
+}
