@@ -5,6 +5,10 @@
             <h2>login page</h2>
             <input type="email" placeholder="Enter your email address" formControlName="email">
             <input type="password" placeholder="Enter your password" formControlName="password">
+            <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+                <p class="error" *ngIf="loginForm.get('password')?.errors?.['required']">*Password is required</p>
+                <p class="error" *ngIf="loginForm.get('password')?.errors?.['pattern']">*Password must contain atleast 8 chars, 1 uprcase, 1 lowcse, 1 dig, 1 spcl char</p>
+            </div>
             <button (click)="login()">Login</button>
         </form>
     </div>
