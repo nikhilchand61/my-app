@@ -34,6 +34,7 @@ import { CreateStudentCardComponent } from './create-student-card/create-student
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { NotifyGuard } from './notify.guard';
+import { CreateCompanyComponent } from './create-company/create-company.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -69,7 +70,8 @@ const routes: Routes = [
     {path: 'student-card-details/:id', component: StudentCardDetailsComponent},
     {path: 'create-student-card', component: CreateStudentCardComponent},
     {path: 'edit-student-card/:id', component: CreateStudentCardComponent},
-    {path: 'create-user',canDeactivate:[NotifyGuard] ,component: CreateUserComponent}
+    {path: 'create-user',canDeactivate:[NotifyGuard] ,component: CreateUserComponent},
+    {path: 'create-company',canDeactivate:[NotifyGuard], component: CreateCompanyComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

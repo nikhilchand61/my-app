@@ -39,6 +39,7 @@ import { CreateStudentCardComponent } from './create-student-card/create-student
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CapitalDirective } from './capital.directive';
 import { PricePipe } from './price.pipe';
+import { CreateCompanyComponent } from './create-company/create-company.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +77,8 @@ import { PricePipe } from './price.pipe';
     CreateStudentCardComponent,
     CreateUserComponent,
     CapitalDirective,
-    PricePipe
+    PricePipe,
+    CreateCompanyComponent
   ],
   imports: [
     BrowserModule,

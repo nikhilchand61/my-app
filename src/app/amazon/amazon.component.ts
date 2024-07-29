@@ -56,5 +56,15 @@ export class AmazonComponent implements OnInit {
     else if(value === "htl"){
       this.amazonProducts = this.amazonProducts.sort((a:any,b:any)=>b.price-a.price);
     }
+    else{
+      this._amazonService.getAmazonProducts().subscribe(
+        (data:any)=>{
+          this.amazonProducts = data;
+        },
+        (err:any)=>{
+          alert("Internal Server Error");
+        }
+      );
+    }
   }
 }

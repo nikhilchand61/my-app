@@ -1,0 +1,82 @@
+.parent{
+    text-transform: capitalize;
+}
+button {
+    background-color: #4CAF50;
+    width: 100%;
+    border: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 20px 100px; */
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+button:disabled{
+    opacity: 0.2;
+}
+  
+button:hover {
+    background-color: darkgreen;
+    color: whitesmoke;
+    border: 2px solid #4CAF50;
+}
+  
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+  
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: black;
+    font-size: 18px;
+}
+  
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}  
+
+.radio input{
+    width: auto;
+    margin: 10px;
+}
+.error{
+    color: red;
+    /* margin-left: 120px; */
+    margin: 0;
+    text-transform:none;
+}
+.delete{
+    width: 30%;
+    margin-left: 70%;
+    background-color: red;
+    opacity: 0.8;
+    color: white;
+}
+.delete:hover{
+    background-color: red;
+    opacity: 1;
+}
