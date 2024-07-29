@@ -38,6 +38,7 @@ import { StudentCardDetailsComponent } from './student-card-details/student-card
 import { CreateStudentCardComponent } from './create-student-card/create-student-card.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CapitalDirective } from './capital.directive';
+import { PricePipe } from './price.pipe';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { CapitalDirective } from './capital.directive';
     StudentCardDetailsComponent,
     CreateStudentCardComponent,
     CreateUserComponent,
-    CapitalDirective
+    CapitalDirective,
+    PricePipe
   ],
   imports: [
     BrowserModule,
