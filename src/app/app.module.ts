@@ -40,6 +40,12 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { CapitalDirective } from './capital.directive';
 import { PricePipe } from './price.pipe';
 import { CreateCompanyComponent } from './create-company/create-company.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
+import { OperationsComponent } from './operations/operations.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +84,13 @@ import { CreateCompanyComponent } from './create-company/create-company.componen
     CreateUserComponent,
     CapitalDirective,
     PricePipe,
-    CreateCompanyComponent
+    CreateCompanyComponent,
+    ParentComponent,
+    ChildComponent,
+    Sibling1Component,
+    Sibling2Component,
+    NewCalculatorComponent,
+    OperationsComponent
   ],
   imports: [
     BrowserModule,

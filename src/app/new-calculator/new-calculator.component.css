@@ -1,0 +1,62 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-transform: capitalize;
+    /* background-color: #e0f7fa; */
+}
+
+/* Style the child container */
+.child {
+    background-color: azure;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the labels and inputs */
+.child label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.child input {
+    padding: 5px;
+    width: 150px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the buttons */
+.child button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: background-color 0.3s;
+}
+
+.child button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.child button:not([disabled]):hover {
+    background-color: #004d40;
+}
+
+/* Style the result text */
+.child h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #00796b;
+}
