@@ -77,7 +77,11 @@ const routes: Routes = [
     {path: 'create-company',canDeactivate:[NotifyGuard], component: CreateCompanyComponent},
     {path: 'parent', component:ParentComponent},
     {path: 'new-calculator', component:NewCalculatorComponent},
-    {path: 'about-company', component:AboutCompanyComponent}
+    {path: 'about-company', component:AboutCompanyComponent},
+    {
+      path: 'payments',
+      loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+    }
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}
