@@ -37,6 +37,7 @@ import { NotifyGuard } from './notify.guard';
 import { CreateCompanyComponent } from './create-company/create-company.component';
 import { ParentComponent } from './parent/parent.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -75,7 +76,8 @@ const routes: Routes = [
     {path: 'create-user',canDeactivate:[NotifyGuard] ,component: CreateUserComponent},
     {path: 'create-company',canDeactivate:[NotifyGuard], component: CreateCompanyComponent},
     {path: 'parent', component:ParentComponent},
-    {path: 'new-calculator', component:NewCalculatorComponent}
+    {path: 'new-calculator', component:NewCalculatorComponent},
+    {path: 'about-company', component:AboutCompanyComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}
