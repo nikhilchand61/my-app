@@ -1,0 +1,38 @@
+div{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745; /* Green color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #1e7e34; /* Even darker green */
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background-color: #d6d6d6; /* Gray color */
+    color: #a1a1a1;
+    cursor: not-allowed;
+}

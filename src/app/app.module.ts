@@ -47,6 +47,11 @@ import { Sibling2Component } from './sibling2/sibling2.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
 import { OperationsComponent } from './operations/operations.component';
 import { AboutUsModule } from './about-us/about-us.module';
+import { SiblingCommunicationComponent } from './sibling-communication/sibling-communication.component';
+import { SiblingItemsComponent } from './sibling-items/sibling-items.component';
+import { SiblingNavComponent } from './sibling-nav/sibling-nav.component';
+import { SiblingCartComponent } from './sibling-cart/sibling-cart.component';
+import { SiblingDiscountComponent } from './sibling-discount/sibling-discount.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +96,12 @@ import { AboutUsModule } from './about-us/about-us.module';
     Sibling1Component,
     Sibling2Component,
     NewCalculatorComponent,
-    OperationsComponent
+    OperationsComponent,
+    SiblingCommunicationComponent,
+    SiblingItemsComponent,
+    SiblingNavComponent,
+    SiblingCartComponent,
+    SiblingDiscountComponent
   ],
   imports: [
     BrowserModule,

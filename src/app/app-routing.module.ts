@@ -38,6 +38,7 @@ import { CreateCompanyComponent } from './create-company/create-company.componen
 import { ParentComponent } from './parent/parent.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
 import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
+import { SiblingCommunicationComponent } from './sibling-communication/sibling-communication.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -81,7 +82,8 @@ const routes: Routes = [
     {
       path: 'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
-    }
+    },
+    {path:'sibling-communication', component:SiblingCommunicationComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

@@ -1,0 +1,14 @@
+.items{
+    width: 50%;
+    height: 250px;
+    background-color: azure;
+    margin: auto;
+}
+
+.sib{
+    width: 30%;
+    height: 250px;
+    margin: 20px;
+    background-color: lightcoral;
+    display: inline-block;
+}
