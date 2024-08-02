@@ -9,7 +9,7 @@ export class ParentComponent implements OnInit {
 
   public ap:string = "";
 
-  public bp:string = "XXXXX";
+  public bp:string = "";
 
   constructor() { }
 

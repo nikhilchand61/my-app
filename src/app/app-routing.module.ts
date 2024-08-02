@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -37,6 +37,8 @@ import { NotifyGuard } from './notify.guard';
 import { CreateCompanyComponent } from './create-company/create-company.component';
 import { ParentComponent } from './parent/parent.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
+import { SiblingCommunicationComponent } from './sibling-communication/sibling-communication.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -75,14 +77,20 @@ const routes: Routes = [
     {path: 'create-user',canDeactivate:[NotifyGuard] ,component: CreateUserComponent},
     {path: 'create-company',canDeactivate:[NotifyGuard], component: CreateCompanyComponent},
     {path: 'parent', component:ParentComponent},
-    {path: 'new-calculator', component:NewCalculatorComponent}
+    {path: 'new-calculator', component:NewCalculatorComponent},
+    {path: 'about-company', component:AboutCompanyComponent},
+    {
+      path: 'payments',
+      loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+    },
+    {path:'sibling-communication', component:SiblingCommunicationComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
