@@ -46,6 +46,8 @@ import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
 import { OperationsComponent } from './operations/operations.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextareaComponent } from './textarea/textarea.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +92,9 @@ import { OperationsComponent } from './operations/operations.component';
     Sibling1Component,
     Sibling2Component,
     NewCalculatorComponent,
-    OperationsComponent
+    OperationsComponent,
+    RatingComponent,
+    TextareaComponent
   ],
   imports: [
     BrowserModule,

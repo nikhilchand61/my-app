@@ -41,8 +41,9 @@
             <div class="card" *ngFor="let amazonProduct of amazonProducts" title={{amazonProduct.description}}>
                 <div class="card_image">
                     <img src="{{amazonProduct.image}}" alt="" width="200px" height="200px">
-                    <button>{{amazonProduct.rating.rate}} &#9733; | {{amazonProduct.rating.count}}</button>
+                    <button><app-rating [rating]="amazonProduct.rating.rate"></app-rating> &nbsp;| {{amazonProduct.rating.count}}</button>
                 </div>
+                
                 <h4> {{amazonProduct.category}} </h4>
                 <p> {{amazonProduct.title}} </p>
                 <h5><strong> rs. {{amazonProduct.price}} </strong></h5>

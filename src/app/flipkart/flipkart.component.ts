@@ -16,6 +16,7 @@ export class FlipkartComponent implements OnInit {
     rating: 0,
     freedelivery: false
   };
+  public ratingImg:string = "";
   
   public products:any[] = [
     {name: 'pen', price: 10, rating: 3, freedelivery: false},
@@ -80,5 +81,8 @@ export class FlipkartComponent implements OnInit {
   addToCart() {
     this.products.push({ ...this.newProduct });
     this.newProduct = { name: '', price: 0, rating: 0, freedelivery: false };
+  }
+  catch(value:string){
+    this.ratingImg = value;
   }
 }

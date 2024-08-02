@@ -28,6 +28,7 @@
                 <input type="radio" id="female" [(ngModel)]="newEmployee.gender" name="gender" value="female" >
                 <label for="female">female</label>
                 <label for="">address:</label>
+                <app-textarea [max]="100"></app-textarea>
                 <textarea name="" id="" rows="3" cols="50" [(ngModel)]="newEmployee.address" name="address"></textarea>
             </div>
             <div>

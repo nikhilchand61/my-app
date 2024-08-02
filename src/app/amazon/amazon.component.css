@@ -61,6 +61,10 @@ select{
 }
 .card_image > button{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
     left: 5px;
     bottom: 10px;
     opacity: 0.8;
