@@ -46,17 +46,16 @@ import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
 import { OperationsComponent } from './operations/operations.component';
-<<<<<<< HEAD
+
 import { RatingComponent } from './rating/rating.component';
 import { TextareaComponent } from './textarea/textarea.component';
-=======
+
 import { AboutUsModule } from './about-us/about-us.module';
 import { SiblingCommunicationComponent } from './sibling-communication/sibling-communication.component';
 import { SiblingItemsComponent } from './sibling-items/sibling-items.component';
 import { SiblingNavComponent } from './sibling-nav/sibling-nav.component';
 import { SiblingCartComponent } from './sibling-cart/sibling-cart.component';
 import { SiblingDiscountComponent } from './sibling-discount/sibling-discount.component';
->>>>>>> 83e59f71d8ae4aad1c939b80517772bc83daf5d9
 
 @NgModule({
   declarations: [
@@ -102,16 +101,13 @@ import { SiblingDiscountComponent } from './sibling-discount/sibling-discount.co
     Sibling2Component,
     NewCalculatorComponent,
     OperationsComponent,
-<<<<<<< HEAD
     RatingComponent,
-    TextareaComponent
-=======
+    TextareaComponent,
     SiblingCommunicationComponent,
     SiblingItemsComponent,
     SiblingNavComponent,
     SiblingCartComponent,
     SiblingDiscountComponent
->>>>>>> 83e59f71d8ae4aad1c939b80517772bc83daf5d9
   ],
   imports: [
     BrowserModule,
