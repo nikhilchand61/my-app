@@ -63,7 +63,7 @@ const routes: Routes = [
     {path: 'amazon', component: AmazonComponent},
     {path: 'mails', component: MailsComponent},
     {path: 'reload', component: ReloadComponent},
-    {path: 'memes', component: MemesComponent},
+    {path: 'memes-one', component: MemesComponent},
     {path: 'create-vehicle', component: CreateVehicleComponent},
     {path: 'create-account', component: CreateAccountComponent},
     {path: 'student-card', component: StudentCardComponent},
@@ -79,6 +79,7 @@ const routes: Routes = [
     {path: 'parent', component:ParentComponent},
     {path: 'new-calculator', component:NewCalculatorComponent},
     {path: 'about-company', component:AboutCompanyComponent},
+    {path: 'user-one-path'},
     {
       path: 'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
